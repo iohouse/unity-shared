@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class MoveTowardsTarget : MonoBehaviour {
@@ -12,6 +12,8 @@ public class MoveTowardsTarget : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 	
+		// TODO: needs a check if the target is destroyed while the transform is being updated (still moving towards)
+
 		// if we don't have a target assigned then don't do anything
 		if (Target == null) {
 			return;
